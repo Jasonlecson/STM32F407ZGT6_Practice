@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp
+".\objects\croutine.o"
+".\objects\event_groups.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\port.o"
+".\objects\heap_4.o"
+--strict --scatter ".\Objects\Missile.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Missile.map" -o .\Objects\Missile.axf
